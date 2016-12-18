@@ -211,13 +211,13 @@ Paul.Family$kids.age[2]
 Paul.Family[[4]][2]
 
 id <- c(1, 2, 3, 4)
-x <- data.frame(id)
+x <- data.frame(id)#以列排序
 x
 
-matrix.x=as.matrix(x)
+matrix.x=as.matrix(x)#轉換資料框架物件為矩陣物件
 matrix.x
 
-vector.x=as.vector(matrix.x)
+vector.x=as.vector(matrix.x)#轉換矩陣物件為向量物件
 vector.x
 
 
