@@ -41,14 +41,12 @@ X <- scan("X1.txt",encoding="UTF-8")
 
 write.table(X,"D:/X_File.csv",row.names=TRUE,col.names=TRUE,sep=",")
 
-X <- scan("X.csv",what = "character",sep=",",encoding = "UTF-8")#,what = 'character'
+X <- scan("X.csv",what = "character",sep=",",encoding = "Big5")#,what = 'character'
 X
 
 X1 <- data.frame(X)
 X1
-X2 <- as.vector(X)
-X2
-X3 <- as.matrix(X2,nrow=5,ncol=5)#,byrow=TRUE
+X3 <- matrix(X1[,1],nrow=5,ncol=5,byrow=TRUE)#,byrow=TRUE
 X3
 
 X1[,-1]
