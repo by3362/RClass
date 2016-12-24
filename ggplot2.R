@@ -8,4 +8,4 @@ head(data.subset)
 qplot(data.subset$DC,data.subset$ISI)
 qplot(log(FFMC),log(ISI) ,data = firedata)
 qplot(FFMC, DMC, data = data.subset,geom = c("point", "smooth"))
-
+ 
