@@ -9,7 +9,7 @@ names(EightAndHalf)
 head(EightAndHalf)
 EightAndHalf_1 <- EightAndHalf[,-3]
 EightAndHalf_1
-
+ 
 str(EightAndHalf_1)
 summary(EightAndHalf_1)
 
