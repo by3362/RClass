@@ -16,12 +16,12 @@ summary(EightAndHalf_1)
 #d <- as.factor(EightAndHalf_1[,3])
 #d <- as.numeric(EightAndHalf_1[,3])
    
-  
+
 EightAndHalf_1 <- as.data.frame(EightAndHalf_1)
 EightAndHalf_1
 EightAndHalf_2 <- ddply(EightAndHalf_1,c("縣市","軍種類別"),summarise,入營總人數=sum(入營人數))
 EightAndHalf_2
-
+ 
 EightAndHalf_3 <- tapply(as.numeric(EightAndHalf_1[,3]),list(EightAndHalf_1[,1],EightAndHalf_1[,2]),sum)
 EightAndHalf_3
 EightAndHalf_3 <- as.data.frame(EightAndHalf_2)
